@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">shoe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">UserName</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="welcome">Welcome</string>
+    <string name="instruction">Instruction</string>
+    <string name="fabcontent">FABContent</string>
+    <string name="logout">Logout</string>
+</resources>
