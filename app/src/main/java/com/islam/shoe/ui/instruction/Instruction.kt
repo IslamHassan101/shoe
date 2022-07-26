@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.islam.shoe.R
+import com.islam.shoe.databinding.FragmentInstructionBinding
 
 
 class Instruction : Fragment() {
@@ -20,7 +23,13 @@ class Instruction : Fragment() {
 
         viewModel = ViewModelProvider(this).get(InstructionViewModel::class.java)
 
-        return inflater.inflate(R.layout.fragment_instruction, container, false)
+        val binding: FragmentInstructionBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_instruction, container, false)
+
+        binding.btnGoShoeList.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_instruction_to_shoeList)
+        }
+        return binding.root
     }
 
 }

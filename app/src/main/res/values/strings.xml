@@ -9,4 +9,15 @@
     <string name="instruction">Instruction</string>
     <string name="fabcontent">FABContent</string>
     <string name="logout">Logout</string>
+    <string name="shoe_detail">Shoe detail</string>
+    <string name="shoe_list">Shoe list</string>
+    <string name="welcome_to_our_shoes_story">Welcome to our Shoes Story !</string>
+    <string name="go_instructions">go Instructions</string>
+    <string name="shoes">Shoes</string>
+    <string name="shoe_name">shoe name</string>
+    <string name="shoes_company">shoes company</string>
+    <string name="shoes_size">shoes size</string>
+    <string name="shoes_description">shoes description</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
 </resources>
