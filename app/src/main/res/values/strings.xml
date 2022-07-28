@@ -20,4 +20,5 @@
     <string name="shoes_description">shoes description</string>
     <string name="save">save</string>
     <string name="cancel">cancel</string>
+    <string name="text_instructions">How will I measure my size? \n 1. Neck Base Measure around your neck on where the shirt is placed. \n 2. Chest Place the tape measure on the widest part of your chest close to the armpit and measure around your chest. \n 3. Waist Place your hand on your waist and measure from that point. \n 4. Inner Leg Length Measure the inner leg from the uppermost part to the end. \n Pay attention to hold the tape measure straight and parallel to the surface and not to slide. \n Relax yourself when measuring, do not hold your breath and do not boost your chest. \n You should take measure on your naked body.</string>
 </resources>

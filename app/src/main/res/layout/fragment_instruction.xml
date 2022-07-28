@@ -8,13 +8,25 @@
     tools:context=".ui.instruction.Instruction">
 
     <TextView
-        android:id="@+id/text_instruction"
+        android:id="@+id/title_instruction"
         style="@style/text_style"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:text="@string/instruction"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_instructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_instruction" />
 
     <Button
         android:id="@+id/btn_go_shoe_list"
@@ -28,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/text_instructions" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

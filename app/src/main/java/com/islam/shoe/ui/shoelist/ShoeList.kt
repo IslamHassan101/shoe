@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.islam.shoe.R
+import com.islam.shoe.databinding.FragmentShoeListBinding
 
 
 class ShoeList : Fragment() {
@@ -15,7 +18,14 @@ class ShoeList : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_shoe_list, container, false)
+
+        val binding: FragmentShoeListBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
+
+        binding.fabAddShoe.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_shoeList_to_shoeDetail)
+        }
+        return binding.root
     }
 
 

@@ -43,7 +43,11 @@
     </fragment>
     <fragment
         android:id="@+id/shoeDetail"
-        android:name="com.islam.shoe.ui.shoedetail.shoeDetail"
+        android:name="com.islam.shoe.ui.shoedetail.ShoeDetail"
         android:label="fragment_shoe_detail"
-        tools:layout="@layout/fragment_shoe_detail" />
+        tools:layout="@layout/fragment_shoe_detail" >
+        <action
+            android:id="@+id/action_shoeDetail_to_shoeList"
+            app:destination="@id/shoeList" />
+    </fragment>
 </navigation>
