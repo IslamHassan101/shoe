@@ -7,7 +7,7 @@ import com.islam.shoe.models.Shoe
 
 class ShoeListViewModel : ViewModel() {
 
-    private val _shoeLivedata = MutableLiveData<List<Shoe>>()
-    val shoeLiveData: MutableLiveData<List<Shoe>>
-        get() = _shoeLivedata
+//    private val _shoeLivedata = MutableLiveData<String>()
+//    val shoeLiveData: MutableLiveData<String>
+//        get() = _shoeLivedata
 }

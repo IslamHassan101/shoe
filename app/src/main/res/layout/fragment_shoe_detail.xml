@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- fragment using constraint's and layout to use data binding -->
+
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.islam.shoe.ui.shoedetail.ShoeDetailViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,6 +47,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:autofillHints=""
+            android:text="@={viewModel.item}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:inputType="text"
